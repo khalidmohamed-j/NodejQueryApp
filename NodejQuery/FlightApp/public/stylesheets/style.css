@@ -1,0 +1,51 @@
+body {
+  padding: 50px;
+   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+/*
+h2 {
+  color: rgb(0, 255, 213);
+} */
+/* a {
+  color: #00B7FF;
+} */
+
+
+.header {
+  background-image: url(/images/plane1.jpeg);
+  background-size: cover;
+  background-position: top right;
+  padding-bottom: 100px;
+ }
+ 
+ .intro {
+  background-image: url(/images/plane2.jpg);
+  background-size: cover;
+  padding-bottom: 100px;
+  
+ }
+
+
+.header, .intro {
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  max-height: 500px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  text-align: center;
+
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <title>My First jQuery Mobile Application</title>
+  <link rel="stylesheet" href="stylesheets/style.css" />
+  <link rel="stylesheet" href="stylesheets/themes/my-custom-theme.css" />
+  <link rel="stylesheet" href="stylesheets/themes/jquery.mobile.icons.min.css" />
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" /> 
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> 
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> 
+  <script src="/javascripts/main.js"></script>
+ </head>
+
+ <body>
+      //*********************************************************
+      //*********************************************************
+<div data-role="page" id="Home">
+
+   <div data-role="header" data-theme='a'> 
+      <h1>Flight App</h1>
+      <div data-role="navbar">
+         <ul>
+               <li><a href="#Show" data-icon="star">Show Flights</a> </li>
+               <li><a href="#AddDelete" data-icon="plus">Add or Delete Flights</a> </li>
+         </ul>
+      </div><!-- /navbar -->
+   </div>
+
+   <div data-role="content" data-theme='a' class="header">
+      <h2>Flight App</h2>
+      
+   </div>
+
+   <div class="intro">
+      
+      <h3>About Us </br> Flight Group powers travel to a highly valuable global audience of travel consumers, 
+         collaborating with the world’s leading consumer brands to provide incremental demand and direct bookings. </h3>
+      
+   </div>
+  
+
+   <div data-role="footer" data-theme='a'>
+      <h1>Copywrite FlightGroup 2020</h1>
+   </div>
+
+</div>
+//*********************************************************
+//*********************************************************
+<div data-role="page" id="Show">
+
+   <div data-role="header" data-theme='a'> 
+      <h1>Flight App</h1>
+      <div data-role="navbar">
+            <ul>
+                  <li><a href="#Home" data-icon="home">Home Page</a></li>
+                  <li><a href="#AddDelete" data-icon="plus">Add or Delete Flights</a> </li>
+            </ul>
+         </div><!-- /navbar -->
+   </div>
+
+   <div data-role="content" data-theme='a'>
+     <h2>My Flights</h2>
+     <div>
+         <ul id="listUl"></ul>
+     </div>
+   </div>
+
+   <div data-role="footer" data-theme='a'>
+      <h1>Copywrite FlightGroup 2020</h1>
+   </div>
+
+</div>
+
+//*********************************************************
+//*********************************************************
+
+<div data-role="page" id="AddDelete">
+
+            <div data-role="header" data-theme='a'> 
+            <h1>Flight App</h1>
+               <div data-role="navbar">
+                     <ul>
+                        <li><a href="#Home" data-icon="home">Home Page</a></li>
+                        <li><a href="#Show" data-icon="star">Show Flights</a> </li
+                     </ul>
+                  </div><!-- /navbar -->
+            </div>
+    
+            <div data-role="content" data-theme='a'>
+               <h2>Delete a Flight by Destination</h2>
+               <div>
+                  <ul id="deleteListUl"></ul>
+               </div>
+               Enter the Destination: <input type="text" id="deleteItem">
+               <button id="delete" >Delete that Flight</button>
+            </div>
+            <div data-theme='a'>
+               <h3>Book a new Flight</h3>
+               <!-- Personal info -->
+               FirstName: <input type="text" id="firstName">
+               LastName: <input type="text" id="lastName">
+               Email: <input type="text" id="email">
+               <!-- Flight info -->
+               FlyingFrom: <input type="text" id="flyingFrom">
+               Destination: <input type="text" id="destination">
+               Departing: <input type="date" id="departing">
+               Returning: <input type="date" id="returning">
+               Adults: <input type="number" id="adults">
+               Children: <input type="number" id="children">
+               TravelClass: <input type="text" id="travelClass">
+               
+               <button id="newFlight" >Submit New Flight</button>
+            </div>
+    
+            <div data-role="footer"  data-theme='a'>
+                <h1>Copywrite FlightGroup 2020</h1>
+            </div>
+    
+</div>
+
+
+//*********************************************************
+//*********************************************************
+
+
+<div data-role="page" id="Details">
+
+            <div data-role="header" data-theme='a'> 
+            <h1>Flight App</h1>
+               <div data-role="navbar">
+                     <ul>
+                        <li><a href="#Home" data-icon="home">Home Page</a></li>
+                        <li><a href="#Show" data-icon="star">Show Flights</a> </li>
+                        <li><a href="#AddDelete" data-icon="plus">Add or Delete Flights</a> </li>
+                     </ul>
+                  </div><!-- /navbar -->
+            </div>
+    
+            <div data-role="content" data-theme='a'>
+               <h2>Here are the details for that Flight</h2>
+               <div>
+                  <p id="IDparmHere" hidden>change1</p>  
+                 
+                  <p class="bold" > Here are the details</p>
+                  <p> <span class="bold"> LastName: </span> <span id="oneLastName" </span>  </p>
+                  <p><span class="bold"> Destination: </span> <span id="oneDestination" </span>  </p>
+                  <p><span class="bold"> Departing: </span> <span id="oneDeparting" </span>  </p>
+                  <p> <span class="bold"> Returning: </span> <span id="oneReturning" </span>  </p>
+                  <p><span class="bold"> TravelClass: </span> <span id="oneTravelClass" </span>  </p>
+               </div>
+  
+               
+            </div>
+    
+            <div data-role="footer"  data-theme='a'>
+                <h1>Copywrite FlightGroup 2020</h1>
+            </div>
+    
+</div>
+
+
+ </body>
+ </html> 
