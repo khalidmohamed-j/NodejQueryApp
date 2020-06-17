@@ -66,21 +66,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
            document.getElementById("adults").value, 
            document.getElementById("children").value,
            document.getElementById("travelClass").value ) ;
-
-         /*   var settings = {
-            "async": true,
-            "crossDomain": true,
-            "url": "https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/autosuggest/v1.0/UK/GBP/en-GB/?query=Stockholm",
-            "method": "GET",
-            "headers": {
-                "x-rapidapi-host": "skyscanner-skyscanner-flight-search-v1.p.rapidapi.com",
-                "x-rapidapi-key": "85318e8eecmsh4d30c53b25a200dp128bf8jsnfd71ab4b6f52"
-            }
-        }
-        
-        $.ajax(settings).done(function (response) {
-            console.log(response);
-             });*/
        
         $.ajax({
             url : "/AddFlight",
